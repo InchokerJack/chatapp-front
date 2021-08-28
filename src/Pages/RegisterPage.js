@@ -7,7 +7,7 @@ const RegisterPage = (props) => {
   const emailRef = React.createRef();
   const passwordRef = React.createRef();
 
-  const registerUser = (props) => {
+  const registerUser = () => {
     const name = nameRef.current.value;
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
@@ -44,7 +44,7 @@ const RegisterPage = (props) => {
             type="text"
             name="name"
             id="name"
-            placeholder="John Doe"
+            placeholder="Le Huu Tri"
             ref={nameRef}
           />
         </div>
@@ -53,7 +53,7 @@ const RegisterPage = (props) => {
           type="email"
           name="email"
           id="email"
-          placeholder="abc@example.com"
+          placeholder="lehuutri@example.com"
           ref={emailRef}
         />
       </div>
